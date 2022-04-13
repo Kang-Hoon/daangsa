@@ -3,14 +3,13 @@
     Spring 2022 - OSSC
     Project Name: DaangSa
 
-
-
     <img src="gsr2.png" width="600" class="center">
 
 -->
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="gsr1.css">
     </head>
 
     <body>
@@ -18,28 +17,40 @@
         <h2> GSR GSR GSR </h2>
         
         <!-- Section - Image Searching-->
-        <div class="s_Image">
+        <div class="section_Image">
             <div id="image-logo">
-                <img src="daangn.png" width="600" class="center" >
+                <img src="daangn.png" width="300" class="center" >
             </div>
         </div>
     
         <!-- Section - Show Average Price + Alert -->
-        <div class="s_Price">
-            <div>
+        <div class="section_Price">
+            <div id="price_graph">
 
+            </div>
+            <div id="price_buttons">
+                <button type="button" class="button", id="button_oneweek"
+                onclick="document.getElementById('show_time').innerHTML = Date()"> 1 Week </button>
+                <button type="button" class="button", id="button_onemonth"> 1 Month </button>
+                <button type="button" class="button", id="button_oneyear"> 1 Year </button>
+
+                <p id="show_time"></p>
             </div>
         </div>
         
-        <span>
-
-        </span>
+        <!--
+            <span>
+            <h6> Rice with Spam </h6>
+            </span>
+        -->        
     </body>
 
     <footer>
+        <!--
         <p></p>
         <p><a href="mailto:32192969@dankook.ac.kr"> Author 1 </a></p>
         <p><a href="mailto:32193869@dankook.ac.kr"> Author 2 </a></p>
+        --> 
     </footer>
 
 </html> 
