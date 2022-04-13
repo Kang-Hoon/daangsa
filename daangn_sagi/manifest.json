@@ -1,8 +1,8 @@
 {
-    "name": "daangnsagi",
+    "name": "Daangnsagi",
     "version": "0.0.1",
-    "description": "demo",
-    "manifest_version": 2,
+    "description": "OSSC Daangn demo",
+    "manifest_version": 3,
     "browser_action": {
         "default_popup": "gsr1.html",
         "default_icon": "daangn.png"
