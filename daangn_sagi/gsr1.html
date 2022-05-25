@@ -1,10 +1,5 @@
+
 <!DOCTYPE html>
-<!-- 
-    Spring 2022 - OSSC
-    Project Name: DaangnSagi
-    Author      : Lee Kanghoon
-    Co-author   : Jang Suyoon
--->
 <html>
     <head>
         <meta charset="utf-8"> 
@@ -17,45 +12,55 @@
 
     <body>
         <h1> Open Source SW Contribution </h1>
-        <h2> GSR GSR GSR </h2>
+
+
+        <div class="section" id="section1">
+            <h2> Price Fluc Graph </h2>
         
-        <!-- Section - Image Searching-->
-        <div class="section_Image">
-            <div id="image-logo">
-                <img src="daangn.png" width="30%" class="center" >
+            <!-- Section - Image Searching-->
+            <div class="section_Image">
+                <div id="image-logo">
+                    <img src="daangn.png" width="30%" class="center" >
+                </div>
             </div>
-        </div>
-    
+     
+            <br>
 
-        <div id="btn1">
-            <button type="button" onclick="alert('반갑습니다')"> Press the Button1 </button>
-            <!-- 해당 제품의 최근 가격 동향을 그래프로 보여주기 -->
-
+            <div id="btn1">
+                <button type="button" onclick="alert('반갑습니다')"> Press the Button1 </button>
+                <!-- 해당 제품의 최근 가격 동향을 그래프로 보여주기 -->
+            </div>
             <br>
         </div>
-        <br><br><br>
-
-        <div id="btn2">
-            <input type="button" value="Press the Button2">
-            <!-- 매물의 비슷한 제품 가운데 최근 10건의 거래글 링크 보여주기 -->
-            
+        <br>
+        <div class="section" id="section2">
+            <h2> Transaction Links </h2>
             <br>
-        </div>
-
-        <!-- Section - Show Average Price + Alert -->
-        <div class="section_Price">
-            <div id="price_graph">
-
+            <div id="blank1">
+                Ed Sheeran - Perfect
             </div>
-            <div id="price_buttons">
-                <button type="button" class="button", id="button_oneweek"
-                onclick="document.getElementById('show_time').innerHTML = Date()"> 1 Week </button>
-                <button type="button" class="button", id="button_onemonth"> 1 Month </button>
-                <button type="button" class="button", id="button_oneyear"> 1 Year </button>
+            <br>
+            <div id="btn2">
+                <input type="button" value="Press the Button2">
+                <!-- 매물의 비슷한 제품 가운데 최근 10건의 거래글 링크 보여주기 -->
+            </div>
+            <br>
+            <!-- Section - Show Average Price + Alert -->
+            <div class="section_Price">
+                <div id="price_graph">
 
-                <p id="show_time"></p>
+                </div>
+                <div id="price_buttons">
+                    <button type="button" class="button", id="button_oneweek"
+                    onclick="document.getElementById('show_time').innerHTML = Date()"> 1 Week </button>
+                    <button type="button" class="button", id="button_onemonth"> 1 Month </button>
+                    <button type="button" class="button", id="button_oneyear"> 1 Year </button>
+
+                    <p id="show_time"></p>
+                </div>
             </div>
         </div>
+        
         
         <script> 
             document.write(now + "<br>");  // 객체 값 출력
@@ -63,10 +68,6 @@
         
         <br><br>
 
-
-
-
-        
         
         <!-- 가능하면 인라인 자바스크립트는 사용하지 말자 -->
 
@@ -86,3 +87,11 @@
     </footer>
 
 </html> 
+
+
+<!-- 
+    Spring 2022 - OSSC
+    Project Name: DaangnSagi
+    Author      : Lee Kanghoon
+    Co-author   : Jang Suyoon
+-->
