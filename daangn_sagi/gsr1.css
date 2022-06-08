@@ -8,7 +8,7 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: rgb(235, 215, 215);
     overflow: hidden;
   }
   
@@ -34,6 +34,14 @@
     color: white;
   }
 
+#home_home {
+  padding:10px;
+  margin:10px;
+}
+
+#home_search {
+  padding:10px;
+}
 .section {
     border:1px solid; 
 }
@@ -48,4 +56,30 @@
     width: 400px;
     height:300px;
 >>>>>>> Stashed changes
+}
+
+#circle1 {
+
+  width : 100px;
+  height : 100px;
+  border-radius: 50%;
+  background-color: tomato;
+
+  line-height: 80px;
+  font-size: 15px;
+  
+  text-align: center;
+}
+
+#circle2 {
+
+  width : 100px;
+  height : 100px;
+  border-radius: 50%;
+  background-color: green;
+
+  line-height: 80px;
+  font-size: 15px;
+  
+  text-align: center;
 }
