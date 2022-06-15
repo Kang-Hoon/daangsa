@@ -10,8 +10,6 @@ chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
 }); 
 
 
-
-
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
