@@ -5,12 +5,13 @@
         <meta charset="utf-8"> 
         <link rel="stylesheet" href="gsr1.css">
         <script src="myscript.js"></script>
-        <script src="background.js"></script>
+        <!--<script src="background.js"></script>-->
         <style>
             body {width:500px; height:800px;}
         </style>
     </head>
     <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <h1> Open Source SW Contribution </h1>
         <div class="topnav">
             <a class="active" href="#home">Home</a>
@@ -27,6 +28,8 @@
         </div>
         <br>
         <div class="section" id="safe1">
+            <h2> SAFETY CIRCLES </h2>
+            <br>
             <div id="safelight">
                 <div id="circle1">
                     <h5> SUSPICIOUS! </h5>
@@ -34,6 +37,14 @@
                 <br>
                 <div id="circle2">
                     <h5> SAFE! </h5>
+                </div>
+            </div>
+            <div id="safelight-text">
+                <div>
+                    Am Suspicious 
+                </div>
+                <div>
+                    Am Safe
                 </div>
             </div>
         </div>
@@ -62,7 +73,21 @@
                 <h6> Day 01</h6>
                 <ol><div id="date01"> <a href="url">https://cafe.naver.com/joonggonara/918255261</a> </div></ol>
                 <h6> Day 02</h6>
-                <ol><div id="date02"> <a href="url">https://cafe.naver.com/joonggonara/918627742</a> </div></ol>
+                <ol><div id="date02"> <a href="url">https://cafe.naver.com/joonggonara/923357845</a> </div></ol>
+                <h6> Day 03</h6>
+                <ol><div id="date02"> <a href="url">https://cafe.naver.com/joonggonara/923360006</a> </div></ol>
+                <h6> Day 04</h6>
+                <ol><div id="date02"> <a href="url">https://cafe.naver.com/joonggonara/923362561</a> </div></ol>
+                <h6> Day 05</h6>
+                <ol><div id="date02"> <a href="url">https://cafe.naver.com/joonggonara/923362711</a> </div></ol>
+                <h6> Day 06</h6>
+                <ol><div id="date02"> <a href="url">https://cafe.naver.com/joonggonara/923370925</a> </div></ol>
+                <h6> Day 07</h6>
+                <ol><div id="date02"> <a href="url">https://cafe.naver.com/joonggonara/923377689</a> </div></ol>
+                <h6> Day 08</h6>
+                <ol><div id="date02"> <a href="url">https://cafe.naver.com/joonggonara/923379400</a> </div></ol>
+                <h6> Day 09</h6>
+                <ol><div id="date02"> <a href="url">https://cafe.naver.com/joonggonara/923379554</a> </div></ol>
                 <h6> Day 10</h6>
                 <ol><div id="date10"> <a href="url">https://cafe.naver.com/joonggonara/920358327</a> </div></ol>
             </div>
@@ -82,7 +107,6 @@
                     onclick="document.getElementById('show_time').innerHTML = Date()"> 1 Week </button>
                     <button type="button" class="button", id="button_onemonth"> 1 Month </button>
                     <button type="button" class="button", id="button_oneyear"> 1 Year </button>
-
                     <p id="show_time"></p>
                 </div>
             </div>
@@ -90,17 +114,39 @@
         <br>
         <div class="section" id="about">
             <h2> About us </h2>
-            Spring 2022 - OSSC
-            Project Name: DaangnSagi
-            Author      : Lee Kanghoon
-            Co-author   : Jang Suyoon
+            <p>
+                - Spring 2022 - Open Source SW Contribution<br>
+                - Project Name: DaangnSagi<br>
+                - Author      : Lee Kanghoon<br>
+                - Co-author   : Jang Suyoon<br><br>
+            </p>
             <p><a href="mailto:32192969@dankook.ac.kr"> Author 1 : Lee Kanghoon </a></p>
             <p><a href="mailto:32193869@dankook.ac.kr"> Author 2 : Jang Suyoon </a></p>
         </div>
         <br>
-        <div class="section" id="empty">
-        </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+            
         <script> 
             document.write(now + "<br>");  // 객체 값 출력
         </script>
